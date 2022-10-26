@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/Animation/FadeAnimation.dart';
+// import 'package:myapp/Animation/FadeAnimation.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -15,6 +15,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Container(
         width: double.infinity,
+        color: Color(0xFF00707D),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -51,122 +52,71 @@ class _HomePageState extends State<HomePage> {
                 child: SingleChildScrollView(
                   child: Padding(
                     padding: EdgeInsets.all(30),
-                    child: Column(
-                      children: <Widget>[
-                        SizedBox(
-                          height: 60,
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(10),
-                              boxShadow: [
-                                BoxShadow(
-                                    color: Color.fromRGBO(225, 95, 27, .3),
-                                    blurRadius: 20,
-                                    offset: Offset(0, 10))
-                              ]),
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                padding: const EdgeInsets.all(10),
-                                decoration: const BoxDecoration(),
-                                child: const TextField(
-                                  decoration: InputDecoration(
-                                      hintText: "Email or Phone number",
-                                      hintStyle: TextStyle(color: Colors.grey),
-                                      border: InputBorder.none),
-                                ),
-                              ),
-                              Container(
-                                padding: const EdgeInsets.all(10),
-                                decoration:
-                                    const BoxDecoration(border: Border()),
-                                child: const TextField(
-                                  decoration: InputDecoration(
-                                      hintText: "Password",
-                                      hintStyle: TextStyle(color: Colors.grey),
-                                      border: InputBorder.none),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 40,
-                        ),
-                        Text(
-                          "Forgot Password?",
-                          style: TextStyle(color: Colors.grey),
-                        ),
-                        const SizedBox(
-                          height: 40,
-                        ),
-                        Container(
-                          height: 50,
-                          margin: EdgeInsets.symmetric(horizontal: 50),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(50),
-                              color: Colors.orange[900]),
-                          child: const Center(
-                            child: Text(
-                              "Login",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 50,
-                        ),
-                        const Text(
-                          "Continue with social media",
-                          style: TextStyle(color: Colors.grey),
-                        ),
-                        const SizedBox(
-                          height: 30,
-                        ),
-                        Row(
+                    child: Column(children: <Widget>[
+                      SizedBox(
+                        height: 60,
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Color(0xFF00707D),
+                                  blurRadius: 20,
+                                  offset: Offset(0, 10))
+                            ]),
+                        child: Column(
                           children: <Widget>[
-                            Expanded(
-                              child: Container(
-                                height: 50,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(50),
-                                    color: Colors.blue),
-                                child: Center(
-                                  child: Text(
-                                    "Facebook",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                ),
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              decoration: const BoxDecoration(),
+                              child: const TextField(
+                                decoration: InputDecoration(
+                                    hintText: "Numero de Empleado",
+                                    hintStyle: TextStyle(color: Colors.grey),
+                                    border: InputBorder.none),
                               ),
                             ),
-                            SizedBox(
-                              width: 30,
-                            ),
-                            Expanded(
-                                child: Container(
-                              height: 50,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(50),
-                                  color: Colors.black),
-                              child: Center(
-                                child: Text(
-                                  "Github",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold),
-                                ),
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              decoration: const BoxDecoration(border: Border()),
+                              child: const TextField(
+                                decoration: InputDecoration(
+                                    hintText: "Contrseña",
+                                    hintStyle: TextStyle(color: Colors.grey),
+                                    border: InputBorder.none),
                               ),
-                            )),
+                            ),
                           ],
-                        )
-                      ],
-                    ),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 40,
+                      ),
+                      Text(
+                        "Forgot Password?",
+                        style: TextStyle(color: Colors.grey),
+                      ),
+                      const SizedBox(
+                        height: 40,
+                      ),
+                      Container(
+                        height: 50,
+                        margin: EdgeInsets.symmetric(horizontal: 50),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: Color(0xFF00707D)),
+                        child: const Center(
+                          child: Text(
+                            "Login",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ),
+                    ]),
                   ),
                 ),
               ),
